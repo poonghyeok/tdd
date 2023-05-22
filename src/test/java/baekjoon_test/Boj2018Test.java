@@ -35,6 +35,7 @@ public class Boj2018Test {
         assertThat(isValidStart).isTrue();
     }
 
+
     @Test
     @DisplayName("n이 주어졌을 때, 문제의 정답 return 메서드 테스트")
     void getCasesNumTest() {
@@ -45,5 +46,17 @@ public class Boj2018Test {
         int casesNum = boj2018.getCasesNum(n);
         //then
         assertThat(casesNum).isEqualTo(4);
+    }
+
+    @Test
+    @DisplayName("n이 주어졌을 때, 문제의 정답 return 메서드 테스트")
+    void getCasesNumTest2() {
+        //given
+        Boj2018 boj2018 = new Boj2018();
+        int n = 1;
+        //when
+        int casesNum = boj2018.getCasesNum(n);
+        //then
+        assertThat(casesNum).isEqualTo(1);
     }
 }

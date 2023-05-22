@@ -14,6 +14,10 @@ public class Boj2018 {
      * n 이 주어졌을 때, 경우의 수를 고려하기 위한 최대 시작점 구하는 method
     * */
     public int getMaxStartPoint(int n) {
+        if (n == 1) {
+            return 0;
+        }
+
         if (n % 2 != 0) {
             return n/2 + 1;
         }
